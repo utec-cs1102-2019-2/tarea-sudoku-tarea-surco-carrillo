@@ -40,15 +40,40 @@ void check(MATRIX &matrix,MATRIX &checkmatrix ){
 //Cuenta cuantas veces se repite el numero n en la fila i
 int count_rows(MATRIX &matrix, int n, int i){
    // Implementa esta función
+   int contador = 0;
+   for(int j=0;j<matrix[0].size();j++){
+     if (matrix[i][j]==n){
+       contador++;
+     }
+   }
+   cout<<contador;
 }
 //Cuenta cuantas veces se repite el numero n en region (i-1, j-1) a (i+1, j+1)
 int count_square(MATRIX &matrix, int n, int i, int j){
     // Implementa esta función
+    int contador = 0;
+    for (int k=0;k<3;k++){
+      i = i+k-1;
+      for (int l=0;l<3;l++){
+        j = j+l-1;
+        if (matrix[i][j]==n){
+          contador++;
+        }
+      }
+    }
+    cout<<contador;   
 }
 
 //Cuenta cuantas veces se repite el numero n en la columna j
 int count_cols(MATRIX &matrix, int n, int j){
     // Implementa esta función
+    int contador = 0;
+    for(int i=0;i<matrix.size;i++){
+      if (matrix[i][j]==n){
+        contador++;
+      }
+    }
+    cout<<contador;
 }
 
 //Crea una matrix de 9 filas y 9 columnas.
