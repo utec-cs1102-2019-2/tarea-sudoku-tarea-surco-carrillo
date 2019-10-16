@@ -11,5 +11,5 @@
 
 |   | No. Alumno | Apellidos | Nombre | Usuario Github | % participación |
 | --- | --- | --- | --- | --- | --- |
-|  1 |         |            |   |         |  |
-|  2 |         |            |   |         |  |
+|  1 |  201910468       |   Surco Gamboa     | Alejandro  |     AlejandroSG123    | 50% | 
+|  2 |   201910102      |  Carrillo Cervera          | Ricardo Alexis  |   raccito      | 50% |
